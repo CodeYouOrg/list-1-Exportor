@@ -14,8 +14,17 @@
 # Note: python does not have a ++ operator, but += works.
 
 def match_ends(words):
+    for word in words:
+        length = 0
+        count = int 
+        if len(word) >= 2:
+            length = len(word)
+            if word[0] == word[length]:
+                count+=1
+        print(count)
+                        
     # +++your code here+++
-    return
+    return count
 
 
 # B. front_x
@@ -27,8 +36,16 @@ def match_ends(words):
 # before combining them.
 
 def front_x(words):
-    # +++your code here+++
-    return
+    words_x_list = []
+    words_list = []
+    finish_list = []
+    for word in words:
+        
+        if word[0] == 'x': 
+            words_x_list.append(word)
+        else: words_list.append(word)
+    finish_list = sorted(words_x_list) + sorted(words_list)
+    return finish_list
 
 
 # C. sort_last
